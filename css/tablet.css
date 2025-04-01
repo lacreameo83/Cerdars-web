@@ -1,0 +1,139 @@
+
+/* Navbar */
+
+.Navbar_icon {
+    width: 90px;
+    height: 30px;
+}
+
+.Navbar {
+    padding: 40px 30px;
+}
+
+/* herosection */
+
+.maincontainer {
+   
+    padding: 120px 30px;
+    gap: 60px;
+}
+
+.maincontainer_first_P {
+    font-size: 35px;
+    line-height: 120%;
+}
+
+.maincontainer_logo_images  img {
+    width: 81px;
+    height: 81px;
+}
+
+
+
+/* About-cerdas-section */
+
+.about-cerdas-section {
+   
+    padding: 120px 30px;
+    
+}
+
+
+.about-cerdas-section-firstgird div:first-child p:nth-child(2) {
+    font-size: 13px;
+}
+
+.about-cerdas-section {
+    gap: 40px;
+}
+
+ .trading-section-container {
+      padding: 120px 30px;
+      
+ }
+
+
+  /* trading section */
+
+ .group-contects-script  {
+    grid-template-columns:1fr 1fr;
+ }
+
+
+ /* Why choose us */
+  .whychooseus-container {
+    padding: 120px 30px;
+    gap: 40px;
+  }
+
+
+  /* chooseCourse */
+ .chooseCourse-container {
+            padding: 120px 30px;
+            gap: 40px;
+        }
+
+        
+        .chooseCourse-secondgrid-p {
+            font-size: 36px;
+        }
+
+         .chooseCourse-secondgrid-step {
+            width: 80px;
+        }
+
+
+         /* community  */
+        .community-container {
+            /* grid-template-columns: 1fr; */
+            padding: 120px 30px;
+            gap: 40px;
+        }
+
+         .community-secondgrid {
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+         }
+
+        
+  /* new oppunity */
+
+    /* .newoppunity-container {
+    padding:   30px ;
+   
+}  */
+
+.newoppunity-container {
+    padding: 150px 0 90px 70px;
+    background-color: var(--offwhite-color);
+}
+
+.newoppunity-firstgrid {
+    width: 90%;
+    padding: 30px;
+}
+
+.width-group-newoppunity {
+    width: 80%;
+}
+
+.newoppunity-second {
+    gap: 40px;
+}
+
+
+/* footer */
+
+.footer-container {
+    padding: 15px;
+}
+
+.footer-secodgrid {
+    padding: 15px;
+}
+
+.footer-secodgrid {
+    padding: 15px;
+}

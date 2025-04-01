@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerdas</title>
+      <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="css/phone.css" media="(max-width: 767px)">
+
+
+</head>
+<body>
+  <nav class="Navbar">
+      <div >
+         <img class="Navbar_icon"  src="images/Logo.png" alt="logo">
+      </div>
+
+    <div class="Navbar_lists hover display_none_phone">
+        <ol>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Courses</li>
+            <li>Page</li>
+            <li>Contact Us</li>
+        </ol>
+    </div>
+
+    <div class="Navbar_authentication display_none_phone">
+        <button class="Nav_login hover">Login</button>
+        <button class="Nav_Signup hover">Sign Up</button>
+    </div>
+
+    <div id="menubar" onclick="toggleMenu()" class="Navbar_menuicon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div id="navToggle-list">
+        <div class="navToggle-list-div">
+            <img class="Navbar_icon"  src="images/Logo.png" alt="logo">
+            <button onclick="handlemenuclose()" id="close-btn">&times;</button>
+        </div>
+        
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ol>
+
+        <div class="navToggle-list-div navToggle-list-div-2 ">
+             <button style="padding: 10px 20px;" class="Nav_login hover  navToggle-list-btn">Login</button>
+        <button style="padding:10px ;" class="Nav_Signup hover  navToggle-list-btn">Sign Up</button>
+        </div>
+
+    </div>
+
+  </nav>
+
+
+ <!-- Herosection -->
+
+ <main class="maincontainer">
+    <div class="maincontainer_first">
+        <div class="maincontainer_skillContainer">
+            <div class="maincontainer_skillContainer_cerdas">
+               <p>Cerdas</p>
+            </div>
+
+            <p class="maincontainer_skillContainer_skillup">
+                Skill Up Fast
+            </p>
+
+        </div>
+        <p class="maincontainer_first_P">Master New Skills Anytime, Anywhere With Our Curated Learning Programs</p>
+        <p class="maincontainer_first_P2">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat. Imperdiet viverra varius risus facilisi lacus.</p>
+        <div class="maincontainer_btncontainer">
+            <button class="Nav_Signup" >
+                <p>Get Started Now</p>
+            </button >
+            <div class="maincontainer_explorecourses">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+                 <p>Explore Courses</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="maincontainer_second">
+        <div class="maincontainer_second-firstdiv">
+             <div>
+                <div class="stars">
+         ★
+        </div>
+             </div>
+            <p>4.9/5</p>
+        </div>
+         <div class="maincontainer_second-seconddiv">
+            <button>Teachers</button>
+             <div class="circle-container2">
+        <div class="circle "></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+         </div>
+    </div>
+
+
+    <div class="maincontainer_logo_secton">
+        <p>Collaborated with over 580+ trusted worldwide partners</p>
+
+        <div class="maincontainer_logo_images">
+            <img src="images/clientLogo/Logo Client 1.png" alt="client_logo" />
+             <img src="images/clientLogo/Logo Client 2.png" alt="client_logo" />
+              <img src="images/clientLogo/Logo Client 3.png" alt="client_logo" />
+               <img src="images/clientLogo/Logo Client 4.png" alt="client_logo" />
+                <img src="images/clientLogo/Logo Client 5.png" alt="client_logo" />
+        </div>
+    </div>
+</main>
+
+
+<!-- About Cerdas Section -->
+
+<section class="about-cerdas-section">
+
+    <div class="about-cerdas-section-firstgird">
+
+        <div>
+            <p>95%</p>
+
+            <p>Positive feedback from our community</p>
+
+            <div class="loading-container">
+            <div class="loading-bar animated"></div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="about-cerdas-section-secondgird">
+           <button >About Cerdas</button>
+           <p class=" about-cerdas-section-secondgird-p ">Redefining Online Learning For a Smarter, Brighter Future</p>
+           <p class="about-cerdas-section-secondgird-p">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat. Imperdiet viverra varius risus facilisi lacus.</p>
+           <div class="about-cerdas-section-secondgird-grp-div">
+            <div>
+                <!-- 1 -->
+                 <div class="about-cerdas-img-container">
+                    <img src="images/icons/book-open.png" alt="book" />
+                 </div>
+                 <p>Access a vast library of courses anytime, anywhere.</p>
+
+            </div>
+
+            <div>
+                <!-- 2 -->
+                 <div class="about-cerdas-img-container">
+                    <img src="images/icons/award.png" alt="award" />
+                 </div>
+                 <p>Earn certificates to showcase your achievements.</p>
+            </div>
+           </div>
+            <button >Learn More About Us</button>
+    </div>
+
+</section>
+
+
+<!-- Trading Section -->
+
+<section class="trading-section-container">
+    <div>
+         <div class="maincontainer_skillContainer trading-btn">
+            <div class="maincontainer_skillContainer_cerdas">
+               <p>Trading</p>
+            </div>
+
+            <p class="maincontainer_skillContainer_skillup">
+                Explore Featured Courses
+            </p>
+
+        </div>
+    </div>
+    <p>Stay Ahead With Our Trending and In-demand Learning Programs</p>
+    <div>
+    <div class='group-contects-script'>
+      
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                    <img src="images/icons/layers.png" alt="icons" />
+                    <p>Advanced</p>
+                </div>
+                <p style="color: white;"  class="trading-pricing-icon-pricebtn ">$299</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+                Data Science Mastery
+              </p>
+              <p><span>Duration:</span> 12 Weeks</p>
+            </div>
+       </div>
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                     <img src="images/icons/layers.png" alt="icons" />
+                    <p>Beginner</p>
+                </div>
+                <p style="color: white;"  class="trading-pricing-icon-pricebtn ">$1999</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+                Digital Marketing Essentials
+              </p>
+              <p><span>Duration:</span> 8 Weeks</p>
+            </div>
+       </div>
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                    <img src="images/icons/layers.png" alt="icons" />
+                    <p>Intermidate</p>
+                </div>
+                <p style="color: white;"   class="trading-pricing-icon-pricebtn ">$349</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+               Full-Stack Web Development
+              </p>
+              <p><span>Duration:</span> 16 Weeks</p>
+            </div>
+       </div>
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                    <img src="images/icons/layers.png" alt="icons" />
+                    <p>Biginner</p>
+                </div>
+                <p style="color: white;"   class="trading-pricing-icon-pricebtn ">$149</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+                Graphic Design Fundamentals
+              </p>
+              <p><span>Duration:</span> 6 Weeks</p>
+            </div>
+       </div>
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                     <img src="images/icons/layers.png" alt="icons" />
+                    <p>Intermidate</p>
+                </div>
+                <p style="color: white;"   class="trading-pricing-icon-pricebtn ">$249</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+               Project Management Pro
+              </p>
+              <p><span>Duration:</span> 10 Weeks</p>
+            </div>
+       </div>
+        <div class="trading-courses-container">
+           <div class="trading-courses-container-parent">
+
+            
+            <div class="trading-pricing-container">
+               <div>
+                <div class="trading-pricing-icon">
+                    <img src="images/icons/layers.png" alt="icons" />
+                    <p>Beginner</p>
+                </div>
+                <p style="color: white;"   class="trading-pricing-icon-pricebtn ">$299</p>
+                 </div> 
+            </div>
+
+           </div>
+
+            <div class="trading-courses-container-laschild">
+        
+              <p>
+                AI and Machine Learning Basics
+              </p>
+              <p><span>Duration:</span> 8 Weeks</p>
+            </div>
+       </div>
+
+
+    </div>
+</section>
+
+<!-- why choose Us -->
+
+<section class="whychooseus-container">
+<div class="whychooseus-firstgrid">
+    <button>Why Choose Us</button>
+    <p class="whychooseus-firstgrid-p">Quality Education That Fits Your Schedule and Career Goals</p>
+    <p class="whychooseus-firstgrid-p23">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat. Imperdiet viverra varius risus facilisi lacus.</p>
+
+    <div class="whychooseus-grouped">
+        <div>
+            <img src="images/icons/youtube.png" alt="youtube-icon">
+        </div>
+        <div>
+            <p class="big-p">Engaging Video Lessons</p>
+            <p class="small-p">Learn from industry experts through high-quality, interactive video content.</p>
+        </div>
+    </div>
+    <div class="whychooseus-grouped">
+         <div>
+            <img src="images/icons/pie-chart.png" alt="pie-chart-icon">
+        </div>
+        <div>
+            <p class="big-p">Engaging Video Lessons</p>
+            <p class="small-p">Learn from industry experts through high-quality, interactive video content.</p>
+        </div>
+    </div>
+    <div class="whychooseus-grouped">
+         <div>
+            <img src="images/icons/message-circle.png" alt="message-circle-icon">
+        </div>
+        <div>
+            <p class="big-p">Engaging Video Lessons</p>
+            <p class="small-p">Learn from industry experts through high-quality, interactive video content.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="whychooseus-second">
+    <div>
+        <p class="whychooseus-second-first-p">4.9</p>
+         <div class="stars">
+        ★ ★ ★ ★ ★
+        </div>
+        <p class="whychooseus-second-first-p2 
+          DMSans">Sed tellus neque sit pellentesque mauris dignissim amet. Curabitur velit ultrices.
+          </p>
+           <div class="circle-container2">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- meet our experts -->
+<section class="trading-section-container experts-container">
+    <div>
+         <div class="maincontainer_skillContainer trading-btn">
+            <div class="maincontainer_skillContainer_cerdas">
+               <p>Instructors</p>
+            </div>
+
+            <p class="maincontainer_skillContainer_skillup">
+                Meet Our Experts
+            </p>
+
+        </div>
+    </div>
+    <p>Expert-led Courses Designed to Help You Master New Skills with Confidence</p>
+
+     <div class='group-contects-script'>
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill2"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill2"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experts-single-box">
+            <div class="experts-single-box-first-child">
+             <p class="experts-single-box-first-child-p1">10+ years</p>
+             <p class="experts-single-box-first-child-p2"><img src="images/icons/arrow-up-right.png" alt="arrow-up-right" /></p>
+            </div>
+
+            <div class="experts-single-box-second-div">
+                <!-- <div class="experts-single-box-second-div-roundshape">
+        <div class="fill-animation"></div>
+    </div> -->
+
+    <div class="circle-container">
+        <div class="fill"></div>
+    </div>
+                <p class="experts-single-box-second-div-p1">Dr. Jonathan Reed</p>
+                <p class="experts-single-box-second-div-p2">Data Science & AI</p>
+                <p class="experts-single-box-second-div-p2">Machine Learning, Deep Learning</p>
+
+                <div >
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+
+</section>
+
+
+<!-- chooseCourse -->
+<section class="chooseCourse-container">
+    <div class="chooseCourse-firstgrid">
+        <div></div>
+        <div>
+            <img style="width: 90px;height: 90px;" src="images/icons/Play Icon.png" alt="Play Icon" />
+        </div>
+    </div>
+
+    <div class="chooseCourse-secondgrid">
+        <!-- <div class="whychooseus-firstgrid"> -->
+    <button class="chooseCourse-secondgrid-btn1">How It Works</button>
+    <p class="chooseCourse-secondgrid-p smallscreen-text-heads">A Simple and Seamless Process to Start Your Learning Journey</p>
+    
+
+    <div class="choosecourse-flexgap">
+        <div >
+            <p class="chooseCourse-secondgrid-step">Step 1</p>
+        </div>
+        <div class="">
+            <p class="">Sign Up & Choose a Course</p>
+            <p class="choosecourse-flexgap-p">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat.</p>
+        </div>
+    </div>
+    <div class="choosecourse-flexgap">
+        <div >
+            <p class="chooseCourse-secondgrid-step">Step 2</p>
+        </div>
+        <div class="">
+            <p class="">Sign Up & Choose a Course</p>
+            <p class="choosecourse-flexgap-p">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat.</p>
+        </div>
+    </div>
+    <div class="choosecourse-flexgap">
+        <div >
+            <p class="chooseCourse-secondgrid-step">Step 3</p>
+        </div>
+        <div class="">
+            <p class="">Sign Up & Choose a Course</p>
+            <p class="choosecourse-flexgap-p">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat.</p>
+        </div>
+    </div>
+    <button class="chooseCourse-secondgrid-btn2">Learn More About Us</button>
+<!-- </div> -->
+    </div>
+</section>
+
+<!-- commnity section -->
+ <section class="community-container">
+    <div class="community-firstgrid">
+        <button class="community-firstgrid-btn1">Trusted by Thousands</button>
+        <p class="community-firstgrid-p smallscreen-text-heads">Join a Global Community Of Learners Achieving Their Dreams</p>
+        <button class="community-firstgrid-btn2">Join Our Community</button>
+    </div>
+
+
+    <div class="community-secondgrid">
+       <div class="community-secondgrid-div">
+        <div class="community-secondgrid-nestdchild">
+
+        </div>
+
+        <div class="flexcenter-colume">
+            <p>Sophia M</p>
+            <p class="choosecourse-flexgap-p">Data Scientist</p>
+
+        </div>
+        <div class="community-flexcenter-text">
+            <p  class=" choosecourse-flexgap-p">Volutpat id morbi vel nunc tempus pharetra ac mauris. In in commodo enim ultrices.</p>
+        </div>
+        <div>
+             <div class="stars">
+        ★ ★ ★ ★ ★
+        </div>
+        </div>
+
+       </div>
+
+        <div class="community-secondgrid-div">
+        <div class="community-secondgrid-nestdchild">
+
+        </div>
+
+        <div class="flexcenter-colume">
+            <p>Daniel W</p>
+            <p class="choosecourse-flexgap-p">Startup Founder</p>
+
+        </div>
+        <div class="community-flexcenter-text">
+            <p  class=" choosecourse-flexgap-p">Volutpat id morbi vel nunc tempus pharetra ac mauris. In in commodo enim ultrices.</p>
+        </div>
+        <div>
+             <div class="stars">
+        ★ ★ ★ ★ ★
+        </div>
+        </div>
+
+       </div>
+
+    </div>
+ </section>
+
+
+ <!-- unluck New oppunities -->
+
+ <section class="newoppunity-container ">
+    <div class="newoppunity-firstgrid flex-ceter ">
+        <div class="width-group-newoppunity">
+          <div>
+         <div class="maincontainer_skillContainer trading-btn">
+            <div class="maincontainer_skillContainer_cerdas">
+               <p>Instructors</p>
+            </div>
+
+            <p class="maincontainer_skillContainer_skillup">
+                Meet Our Experts
+            </p>
+
+        </div>
+    </div>
+    <p class="newoppunity-firstgrid-p ">Unlock New Opportunities With Top-tier Online Education.</p>
+    <p class="newoppunity-firstgrid-p2">Porta gravida elit convallis in eu. Venenatis euismod libero non sed in dolor feugiat. Imperdiet viverra varius risus facilisi lacus.</p>
+     <div class="maincontainer_btncontainer">
+            <button class="Nav_Signup" >
+                <p>Get Started Now</p>
+            </button >
+            <div class="maincontainer_explorecourses">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+                 <p>Explore Courses</p>
+            </div>
+        </div>
+</div>
+    </div>
+
+
+    <div class="newoppunity-second">
+        <div class="newoppunity-second-div">
+            <p>200+</p>
+            <p>Expert-Led Courses</p>
+        </div>
+
+        <hr />
+
+        <div>
+            <p>50k+</p>
+            <p>Successful Graduates</p>
+        </div>
+
+        <hr />
+
+        <div>
+            <p>120+</p>
+            <p>Global Learning</p>
+        </div>
+    </div>
+ </section>
+
+
+ <footer >
+    <div class="footer-container">
+      <div class="footer-firstgird">
+        <div class="footer-firstgird-div1">
+            <p>Subscribe to Newsletter</p>
+            <p class="
+DMSans">Aliquet dignissim erat habitasse aliquet tincidunt phasellus ultrices.</p>
+        </div>
+        <div class="footer-firstgird-div2">
+            <input class="footer-input DMSans " type="email" placeholder="Enter your email" />
+            <button>
+                Subscribe
+            </button>
+        </div>
+      </div>
+      </div>
+
+      <div class="footer-secodgrid">
+
+        <div class="footer-secodgrid-div1">
+            <img class="footer-secodgrid-div1-img" src="images/Logo (1).png" alt="logo">
+            <p class="small-p-footer">Feel free to call us in working hours Mon - fri {8:00 - 16.00}. Our team will be happy to help answer your queries</p>
+
+            <div class="small-p-footer footer-call">
+                <i class="fa-solid fa-phone"></i>
+                <p>+1 (333) 000-0000</p>
+            </div>
+
+            <div  class="footer-secodgrid-div1-icon">
+                  <div class="social-icon"><img src="images/icons/Vector (2).png" alt="Vector-logo"></div>
+                  <div class="social-icon"><img src="images/icons/twitter.png" alt="twitter-logo"></div>
+                  <div class="social-icon"><img src="images/icons/linkedin.png" alt="linkedin-logo"></div>
+                  <div class="social-icon"><img src="images/icons/instagram.png" alt="instagram-logo."></div>
+                </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="footer-secodgrid-div2">
+            <div class="footer-secodgrid-div2-1">
+                <p>Company</p>
+                <ul class="">
+                    <li><a class="" href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Instructors</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-secodgrid-div2-1">
+                <p>Resources</p>
+                <ul>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Video Guides</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Certification</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="footer-secodgrid">
+        <div class="small-p-footer footer-terms-condition">
+            <p>Copyrigt © 2023 Robokido</p>
+            <hr class="footer-hr">
+            <p>Design by TokoTema</p>
+        </div>
+
+        <div class="small-p-footer footer-terms-condition">
+
+            <p>Terms of Use</p>
+       <hr class="footer-hr">
+            <p>Privacy Policy</p>
+
+        </div>
+      </div>
+      
+ </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
